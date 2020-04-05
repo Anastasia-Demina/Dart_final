@@ -188,7 +188,6 @@ $green-color: #1de9b6;
     }
 }
 .block-about {
-    display: block;
     &-button {
         margin-top: 94px;
         text-align: center;
@@ -526,7 +525,6 @@ $green-color: #1de9b6;
                 color: $accent-color;
                 border-radius: 10px;
                 border: 2px solid $accent-color;
-                cursor: pointer;
             }
             &__text {
                 font-weight: 500;
@@ -544,7 +542,6 @@ $green-color: #1de9b6;
                 margin-left: 253px;
                 padding: 16px 43px;
                 border-radius: 5px;
-                cursor: pointer;
             
             }
         }
@@ -552,38 +549,72 @@ $green-color: #1de9b6;
 }
 .footer {
     background-color: $accent-color;
+    padding-top: 96px;
+    padding-bottom: 101px;
 }
 .block-footer {
     &-menu {
         display: flex;
         justify-content: space-between;
-        padding-top: 96px;
+        margin-bottom: 50px;
         &-header {
-            margin-top: 7px;
             &-list {
+                margin-top: 7px;
                 &__item {
                     margin-right: 0;
-                    margin-left: 48px;
+                    margin-left: 49px;
                 }
             }
         }
     }
-        &__footer {
-            margin-top: 0;
-        }
-    }
     &-description {
         display: flex;
+        justify-content: space-between;
         &-links {
             &-list {
                 display: flex;
                 justify-content: space-between;
+                width: 328px;
                 &__item {
                     color: $text-color;
+                    margin-left: 20px;
+                    margin-right: 17px;
                     &_link {
                         text-decoration: none;
-                        color: $text-color;
+                        color: #838f9b;
+                        margin-left: 6px;
                     }
+                    &_link:nth-child(n+1) {
+                        margin-left: 7px;
+                    }
+                    &_link:nth-child(3) {
+                        margin-left: 4px;
+                    }
+                }
+                &__item:nth-child(1) {
+                    list-style-type: none;
+                    margin-left: -7px;
+                    margin-right: 5px;
+                }
+                &__item:nth-child(2) {
+                    margin-right: 7px;
+                }
+            }
+        }
+        &-social {
+            &-list {
+                display: flex;
+                justify-content: space-between;
+                list-style-type: none;
+                &__item {
+                    margin-left: 19px;
+                    &_link {
+                        text-decoration: none;
+                        font-family: "FontAwesome5BrandsRegular";
+                        font-size: 20px;
+                        color: #59616e;
+                    }
+                }
             }
         }
     }
