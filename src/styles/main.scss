@@ -92,6 +92,7 @@ $green-color: #1de9b6;
     }
     &_gray {
         background-color: #fafafa;
+        padding-bottom: 99px;
     }
 }
 .header {
@@ -187,6 +188,7 @@ $green-color: #1de9b6;
     }
 }
 .block-about {
+    display: block;
     &-button {
         margin-top: 94px;
         text-align: center;
@@ -524,6 +526,7 @@ $green-color: #1de9b6;
                 color: $accent-color;
                 border-radius: 10px;
                 border: 2px solid $accent-color;
+                cursor: pointer;
             }
             &__text {
                 font-weight: 500;
@@ -541,7 +544,46 @@ $green-color: #1de9b6;
                 margin-left: 253px;
                 padding: 16px 43px;
                 border-radius: 5px;
+                cursor: pointer;
             
+            }
+        }
+    }
+}
+.footer {
+    background-color: $accent-color;
+}
+.block-footer {
+    &-menu {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 96px;
+        &-header {
+            margin-top: 7px;
+            &-list {
+                &__item {
+                    margin-right: 0;
+                    margin-left: 48px;
+                }
+            }
+        }
+    }
+        &__footer {
+            margin-top: 0;
+        }
+    }
+    &-description {
+        display: flex;
+        &-links {
+            &-list {
+                display: flex;
+                justify-content: space-between;
+                &__item {
+                    color: $text-color;
+                    &_link {
+                        text-decoration: none;
+                        color: $text-color;
+                    }
             }
         }
     }
