@@ -55,11 +55,6 @@ $green-color: #1de9b6;
     background-size: cover;
     padding-bottom: 187px;
 }
-.page-img {
-    background-image: url(../img/bg-feedback.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 .page {
     padding-top: 94px;
     padding-bottom: 25px;
@@ -93,6 +88,13 @@ $green-color: #1de9b6;
     &_gray {
         background-color: #fafafa;
         padding-bottom: 99px;
+    }
+    &__img {
+        background-image: url(../img/bg-feedback.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 39px;
+        padding-bottom: 39px;
     }
 }
 .header {
@@ -365,6 +367,7 @@ $green-color: #1de9b6;
     justify-content: space-between;
     &-text {
         flex-basis: calc(73% - 515px);
+        margin-top: 55px;
         &__title {
             font-weight: 600;
             color: $text-color;
@@ -390,9 +393,16 @@ $green-color: #1de9b6;
     &-item {
         display: flex;
         justify-content: space-between;
+        margin-top: 70px;
+        &_top {
+            
+        }
+        &_bottom {
+            margin-bottom: 40px;
+        }
         &-ava {
-            margin-right: 51px;
-            margin-top: 43px;
+            margin-top: 49px;
+            margin-left: 48px;
             &__img {
                 border-radius: 50%;
             }
@@ -403,7 +413,7 @@ $green-color: #1de9b6;
             border-radius: 5px;
             background-color: $text-color;
             box-shadow: 0px 3px 17px -11px #25282c;
-            margin-bottom: 79px;
+            /*margin-bottom: 70px;*/
             max-width: 650px;
             padding: 22px 31px;
             &__name {
@@ -411,12 +421,14 @@ $green-color: #1de9b6;
                 font-size: 18px;
                 color: $accent-color;
                 margin-bottom: 10px;
+                margin-top: 7px;
             }
             &__text {
                 color: $gb-color;
                 font-style: italic;
                 max-width: 586px;
                 line-height: 25px;
+                margin-bottom: 2px;
             }
         }
     }
@@ -428,34 +440,132 @@ $green-color: #1de9b6;
     &-ava {
         display: flex;
         justify-content: center;
+        position: relative;
         margin-top: 93px;
         &-item {
             margin: 0 auto;
             text-align: center;
-            &-img {
-                margin-bottom: 54px;
-                &__img {
-                    width: 160px;
-                    height: 160px;
-                    border-radius: 50%;
+            position: absolute;
+            &-left {
+                top: 31px;
+                left: 221px;
+                width: 650px;
+                &-img {
+                    &__img {
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50%;
+                        margin-bottom: 54px;
+                        cursor: pointer;
+                    }
+                    &__img:hover {
+                        width: 160px;
+                        height: 160px;
+                        border-radius: 50%;
+                        margin-top: -62px;
+                        padding: 30px;
+                        background: #fff;
+                        border: 2px solid #f7f7f7;
+                        box-shadow: 0px 0px 10px 4px #f7f7f7;
+                        margin-bottom: 23px;
+                        margin-left: -100px;
+                    }
+                }
+                &-desc {
+                    margin-left: -50px;
+                    width: 650px;
+                    &__name {
+                        font-weight: 700;
+                        font-size: 18px;
+                        color: $accent-color;
+                        margin-bottom: 13px;
+                    }
+                    &__text {
+                        color: $gb-color;
+                        line-height: 25px;
+                    }
+                }
+                
+            }
+            &-center {
+                top: 31px;
+                &-img {
+                    &__img {
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50%;
+                        margin-bottom: 54px;
+                        cursor: pointer;
+                    }
+                    &__img:hover {
+                        width: 160px;
+                        height: 160px;
+                        border-radius: 50%;
+                        margin-top: -62px;
+                        padding: 30px;
+                        background: #fff;
+                        border: 2px solid #f7f7f7;
+                        box-shadow: 0px 0px 10px 4px #f7f7f7;
+                        margin-bottom: 23px;
+                    }
+                }
+                &-desc {
+                    width: 650px;
+                    &__name {
+                        font-weight: 700;
+                        font-size: 18px;
+                        color: $accent-color;
+                        margin-bottom: 13px;
+                    }
+                    &__text {
+                        color: $gb-color;
+                        line-height: 25px;
+                    }
                 }
             }
-            &__name {
-                font-weight: 700;
-                font-size: 18px;
-                color: $accent-color;
-                margin-bottom: 15px;
-            }
-            &__text {
-                color: $gb-color;
-                line-height: 25px;
-                width: 59%;
-                margin-left: 19.6%;
+            &-right {
+                top: 31px;
+                right: 207px;
+                width: 650px;
+                &-img {
+                    &__img {
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50%;
+                        margin-bottom: 54px;
+                        cursor: pointer;
+                    }
+                    &__img:hover {
+                        width: 160px;
+                        height: 160px;
+                        border-radius: 50%;
+                        margin-top: -62px;
+                        padding: 30px;
+                        background: #fff;
+                        border: 2px solid #f7f7f7;
+                        box-shadow: 0px 0px 10px 4px #f7f7f7;
+                        margin-bottom: 23px;
+                        margin-right: -100px;
+                    }
+                }
+                &-desc {
+                    width: 661px;
+                    &__name {
+                        font-weight: 700;
+                        font-size: 18px;
+                        color: $accent-color;
+                        margin-bottom: 13px;
+                    }
+                    &__text {
+                        color: $gb-color;
+                        line-height: 25px;
+                    }
+                }
             }
         }
     }
     &-social {
-        margin-top: 22px;
+        margin-top: 351px;
         &-list {
             display: flex;
             list-style-type: none;
@@ -518,6 +628,7 @@ $green-color: #1de9b6;
             display: flex;
             justify-content: center;
             margin-top: 21px;
+            position: relative;
             &__checkbox {
                 width: 14px;
                 height: 14px;
@@ -531,6 +642,7 @@ $green-color: #1de9b6;
                 color: $accent-color;
                 text-transform: lowercase;
                 margin-top: 17px;
+                margin-left: 22px;
             }
             &__btn {
                 font-weight: 500;
@@ -542,10 +654,58 @@ $green-color: #1de9b6;
                 margin-left: 253px;
                 padding: 16px 43px;
                 border-radius: 5px;
+                cursor: pointer;
             
             }
         }
     }
+}
+input[type="checkbox"]:checked, 
+input[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+input[type="checkbox"]:checked + label:before, 
+input[type="checkbox"]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 419px;
+    top: 16px;
+    width: 14px;
+    height: 14px;
+    border: 1px solid $accent-color;
+    background-color: #ffffff;
+    border-radius: 2px;
+    box-shadow: inset 0px 0px 2px 0.5px $accent-color;
+}
+input[type="checkbox"]:checked + label:after, 
+input[type="checkbox"]:not(:checked) + label:after {
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    left: 421px;
+    top: 18px;
+    width: 10px;
+    height: 5px;
+    border-radius: 1px;
+    border-left: 2px solid $accent-color;
+    border-bottom: 2px solid $accent-color;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+input[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    cursor: pointer;
+}
+input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+    cursor: pointer;
 }
 .footer {
     background-color: $accent-color;
@@ -564,6 +724,11 @@ $green-color: #1de9b6;
                     margin-right: 0;
                     margin-left: 49px;
                 }
+                &__link {
+                    &:hover {
+                        color: $text-color;
+                }
+            }
             }
         }
     }
@@ -619,13 +784,22 @@ $green-color: #1de9b6;
         }
     }
 }
+.slick-slider {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-basis: calc(92% - 515px);
+}
 .slick-vertical .slick-arrow {
-    width: 30px;
+    width: 23px;
+    height: 14px;
     display: block;
-    margin: 0 auto;
+    margin-left: 58.5%;
     cursor: pointer;
 }
-    
+.slick-list.draggable { 
+    height: 458px !important;
+}    
 .slick-vertical .slick-arrow:hover { 
     opacity: .6; 
 }

@@ -26,6 +26,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&family=Roboto&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     </head>
     <body>
         <div class="page-main">
@@ -210,7 +212,7 @@
                 </div>
             </div>
         </div>
-        <div class="page page-img">
+        <div class="page page__img">
             <div class="wrap">
                 <div class="block-testimonials">
                     <div class="block-testimonials-text">
@@ -225,30 +227,60 @@
                         </div>
                     </div>
                     <div class="block-feedback">
-                        <div class="block-feedback-item">
-                            <div class="block-feedback-item-ava">
-                                <img src="../img/avatar-men.png" alt="" class="block-feedback-item-ava__img">
+                        <div>
+                            <div class="block-feedback-item block-feedback-item_top">
+                                <div class="block-feedback-item-ava">
+                                    <img src="../img/avatar-men.png" alt="" class="block-feedback-item-ava__img">
+                                </div>
+                                <div class="block-feedback-item-text">
+                                    <h3 class="block-feedback-item-text__name">
+                                        John Doe
+                                    </h3>
+                                    <p class="block-feedback-item-text__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
+                                    </p>
+                                </div>
                             </div>
-                            <div class="block-feedback-item-text">
-                                <h3 class="block-feedback-item-text__name">
-                                    John Doe
-                                </h3>
-                                <p class="block-feedback-item-text__text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
-                                </p>
+                            <div class="block-feedback-item block-feedback-item_bottom">
+                                <div class="block-feedback-item-ava">
+                                    <img src="../img/avatar-women.png" alt="" class="block-feedback-item-ava__img">
+                                </div>
+                                <div class="block-feedback-item-text">
+                                    <h3 class="block-feedback-item-text__name">
+                                        Khalessi
+                                    </h3>
+                                    <p class="block-feedback-item-text__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="block-feedback-item">
-                            <div class="block-feedback-item-ava">
-                                <img src="../img/avatar-women.png" alt="" class="block-feedback-item-ava__img">
+                        <div>
+                            <div class="block-feedback-item">
+                                <div class="block-feedback-item-ava">
+                                    <img src="../img/avatar-men.png" alt="" class="block-feedback-item-ava__img">
+                                </div>
+                                <div class="block-feedback-item-text">
+                                    <h3 class="block-feedback-item-text__name">
+                                        John Doe
+                                    </h3>
+                                    <p class="block-feedback-item-text__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
+                                    </p>
+                                </div>
                             </div>
-                            <div class="block-feedback-item-text">
-                                <h3 class="block-feedback-item-text__name">
-                                    Khalessi
-                                </h3>
-                                <p class="block-feedback-item-text__text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
-                                </p>
+                            <div class="block-feedback-item">
+                                <div class="block-feedback-item-ava">
+                                    <img src="../img/avatar-women.png" alt="" class="block-feedback-item-ava__img">
+                                </div>
+                                <div class="block-feedback-item-text">
+                                    <h3 class="block-feedback-item-text__name">
+                                        Khalessi
+                                    </h3>
+                                    <p class="block-feedback-item-text__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -265,41 +297,41 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
                     </p>
                     <div class="block-team-ava">
-                        <div class="block-team-ava-item">
-                            <div class="block-team-ava-item-img">
-                                <img src="../img/team-1.jpg" alt="" class="block-team-ava-item-img__img">
+                        <div class="block-team-ava-item block-team-ava-item-left">
+                            <div class="block-team-ava-item-left-img">
+                                <img id="nextContentsLeft" src="../img/team-1.jpg" alt="" class="block-team-ava-item-left-img__img">
                             </div>
-                            <div class="active" style="display: none;">
-                                <h3 class="block-team-ava-item__name">
+                            <div id="nextContentsListLeft" class="block-team-ava-item-left-desc" style="display: none;">
+                                <h3 class="block-team-ava-item-left-desc__name">
                                     Lily Perpal
                                 </h3>
-                                <p class="block-team-ava-item__text">
+                                <p class="block-team-ava-item-left-desc__text">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
                                 </p>
                             </div>
                         </div>
-                        <div class="block-team-ava-item">
-                            <div class="block-team-ava-item-img">
-                                <img src="../img/team-2.jpg" alt="" class="block-team-ava-item-img__img">
+                        <div class="block-team-ava-item block-team-ava-item-center">
+                            <div class="block-team-ava-item-center-img">
+                                <img id="nextContentsCenter" src="../img/team-2.jpg" alt="" class="block-team-ava-item-center-img__img">
                             </div>
-                            <div class="active">
-                                <h3 class="block-team-ava-item__name">
+                            <div id="nextContentsListCenter" class="block-team-ava-item-center-desc" style="display: none;">
+                                <h3 class="block-team-ava-item-center-desc__name">
                                     Sophie Turner
                                 </h3>
-                                <p class="block-team-ava-item__text">
+                                <p class="block-team-ava-item-center-desc__text">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
                                 </p>
                             </div>
                         </div>
-                        <div class="block-team-ava-item">
-                            <div class="block-team-ava-item-img">
-                                <img src="../img/team-3.jpg" alt="" class="block-team-ava-item-img__img">
+                        <div class="block-team-ava-item block-team-ava-item-right">
+                            <div class="block-team-ava-item-right-img">
+                                <img id="nextContentsRight" src="../img/team-3.jpg" alt="" class="block-team-ava-item-right-img__img">
                             </div>
-                            <div class="active" style="display: none;">
-                                <h3 class="block-team-ava-item__name">
+                            <div id="nextContentsListRight" class="block-team-ava-item-right-desc" style="display: none;">
+                                <h3 class="block-team-ava-item-right-desc__name">
                                     Adam Marklen
                                 </h3>
-                                <p class="block-team-ava-item__text">
+                                <p class="block-team-ava-item-right-desc__text">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
                                 </p>
                             </div>
@@ -338,7 +370,7 @@
                             <div></div>
                         </div>
                         <div class="block-contact-form-button">
-                            <p class="block-contact-form-button__text"><input type="checkbox" name="checkbox" class="block-contact-form-button__checkbox"> Subscribe to the newsletter</p>
+                            <p class="block-contact-form-button__text"><input type="checkbox" name="checkbox" id="check" class="block-contact-form-button__checkbox"> <label for="check"></label> Subscribe to the newsletter</p>
                             <button class="block-contact-form-button__btn">Send</button>
                         </div>
                     </div>
@@ -352,11 +384,11 @@
                         <a href="" class="block-footer-menu__logo  header__logo"></a>
                         <div class="block-footer-menu-header">
                             <ul class="block-footer-menu-header-list header-list">
-                                <li class="block-footer-menu-header-list__item header-list__item"><a href="" class="header-list__link">Home</a></li>
-                                <li class="block-footer-menu-header-list__item header-list__item"><a href="" class="header-list__link">Service</a></li>
-                                <li class="block-footer-menu-header-list__item header-list__item"><a href="" class="header-list__link">Extension</a></li>
-                                <li class="block-footer-menu-header-list__item header-list__item"><a href="" class="header-list__link">Pricing</a></li>
-                                <li class="block-footer-menu-header-list__item header-list__item"><a href="" class="header-list__link">Help</a></li>
+                                <li class="block-footer-menu-header-list__item header-list__item"><a href="" class="block-footer-menu-header-list__link header-list__link">Home</a></li>
+                                <li class="block-footer-menu-header-list__item header-list__item"><a href="" class="block-footer-menu-header-list__link header-list__link">Service</a></li>
+                                <li class="block-footer-menu-header-list__item header-list__item"><a href="" class="block-footer-menu-header-list__link header-list__link">Extension</a></li>
+                                <li class="block-footer-menu-header-list__item header-list__item"><a href="" class="block-footer-menu-header-list__link header-list__link">Pricing</a></li>
+                                <li class="block-footer-menu-header-list__item header-list__item"><a href="" class="block-footer-menu-header-list__link header-list__link">Help</a></li>
                             </ul>
                         </div>
                     </div>
@@ -411,15 +443,25 @@
             $("#panel4").slideToggle("slow");
             });
             });
-            $(function(){
+            $(document).ready(function(){
             $('.block-feedback').slick({
                 vertical: true,
                 verticalSwiping: true,
-                slidesToShow: 2,
-                prevArrow: '<img src="../img/arrow-up.svg">',
-                nextArrow: '<img src="../img/arrow-down.svg">'
-            });
+                adaptiveHeight: true,
+                prevArrow: '<img src="/img/arrow-up.png">',
+                nextArrow: '<img src="/img/arrow-down.png">'
+            }
+            );
         });
+            $("#nextContentsLeft").click(function(){
+            $("#nextContentsListLeft").toggle("fast");
+            });
+            $("#nextContentsCenter").click(function(){
+            $("#nextContentsListCenter").toggle("fast");
+            });
+            $("#nextContentsRight").click(function(){
+            $("#nextContentsListRight").toggle("fast");
+            });
         </script>
     </body>
 </html>
