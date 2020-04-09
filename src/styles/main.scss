@@ -608,7 +608,98 @@ $green-color: #1de9b6;
     &__title {
         margin-bottom: 13px;
     }
+    flex-direction: column;
     &-ava {
+        flex-direction: column;
+        display: flex;
+        margin-top: 126px;
+        @media(max-width:900px) {
+            margin-top: 26px;
+        &-img {
+            display: flex;
+            justify-content: space-between;
+            width: 477px;
+            @media(max-width:900px) {
+                flex-direction: column;
+                width: 100%;
+            }
+            &__img {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                margin-bottom: 54px;
+                margin-left: 10px;
+                cursor: pointer;
+                @media(max-width:900px) {
+                    margin: 0 auto 166px;
+                }
+                &__img:hover {
+                    width: 160px;
+                    height: 160px;
+                    border-radius: 50%;
+                    padding: 30px;
+                    background: #fff;
+                    border: 2px solid #f7f7f7;
+                    box-shadow: 0px 0px 10px 4px #f7f7f7;
+                }
+            }
+        }
+        &-text {
+            display: flex;
+            justify-content: center;
+            margin: 31px auto 0px;
+            text-align: center;
+            position: relative;
+            &-desc {
+                position: absolute;
+                width: 650px;
+                @media(max-width:1150px) {
+                    width: 500px;
+                }
+                &__name {
+                    font-weight: 700;
+                    font-size: 18px;
+                    color: $accent-color;
+                    margin-bottom: 13px;
+                }
+                &__text {
+                    color: $gb-color;
+                    line-height: 25px;
+                }
+                &_left {
+                    right: -138px;
+                    @media(max-width:1150px) {
+                        right: -64px;
+                    }
+                    @media(max-width:900px) {
+                        right: -246px;
+                        top: -708px;
+                    }
+                }
+                &_center {
+                    left: -320px;
+                    @media(max-width:1150px) {
+                        left: -240px;
+                    }
+                    @media(max-width:900px) {
+                        left: -253px;
+                        top: -446px;
+                    }
+                }
+                &_right {
+                    left: -132px;
+                    @media(max-width:1150px) {
+                        left: -66px;
+                    }
+                    @media(max-width:900px) {
+                        top: -182px;
+                        left: -252px;
+                    }
+                }
+            }
+        }
+    }
+    /*&-ava {
         display: flex;
         justify-content: center;
         position: relative;
@@ -734,7 +825,7 @@ $green-color: #1de9b6;
                 }
             }
         }
-    }
+    }*/
     &-social {
         margin-top: 351px;
         &-list {
