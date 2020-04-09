@@ -613,16 +613,10 @@ $green-color: #1de9b6;
         flex-direction: column;
         display: flex;
         margin-top: 126px;
-        @media(max-width:900px) {
-            margin-top: 26px;
         &-img {
             display: flex;
             justify-content: space-between;
             width: 477px;
-            @media(max-width:900px) {
-                flex-direction: column;
-                width: 100%;
-            }
             &__img {
                 width: 100px;
                 height: 100px;
@@ -668,29 +662,17 @@ $green-color: #1de9b6;
                     @media(max-width:1150px) {
                         right: -64px;
                     }
-                    @media(max-width:900px) {
-                        right: -246px;
-                        top: -708px;
-                    }
                 }
                 &_center {
                     left: -320px;
                     @media(max-width:1150px) {
                         left: -240px;
                     }
-                    @media(max-width:900px) {
-                        left: -253px;
-                        top: -446px;
-                    }
                 }
                 &_right {
                     left: -132px;
                     @media(max-width:1150px) {
                         left: -66px;
-                    }
-                    @media(max-width:900px) {
-                        top: -182px;
-                        left: -252px;
                     }
                 }
             }
