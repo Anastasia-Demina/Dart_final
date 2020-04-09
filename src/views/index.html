@@ -34,7 +34,10 @@
             <header>
                 <div class="header">
                     <a href="" class="header__logo"></a>
-                    <ul class="header-list">
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                    <ul class="header-list header-list_burger">
                         <li class="header-list__item"><a href="" class="header-list__link active">Home</a></li>
                         <li class="header-list__item"><a href="" class="header-list__link">Service</a></li>
                         <li class="header-list__item"><a href="" class="header-list__link">Extension</a></li>
@@ -414,7 +417,10 @@
                     <div class="block-footer-menu">
                         <a href="" class="block-footer-menu__logo  header__logo"></a>
                         <div class="block-footer-menu-header">
-                            <ul class="block-footer-menu-header-list header-list">
+                            <div class="header__burger">
+                                <span></span>
+                            </div>
+                            <ul class="block-footer-menu-header-list header-list header-list_burger">
                                 <li class="block-footer-menu-header-list__item header-list__item"><a href="" class="block-footer-menu-header-list__link header-list__link">Home</a></li>
                                 <li class="block-footer-menu-header-list__item header-list__item"><a href="" class="block-footer-menu-header-list__link header-list__link">Service</a></li>
                                 <li class="block-footer-menu-header-list__item header-list__item"><a href="" class="block-footer-menu-header-list__link header-list__link">Extension</a></li>
@@ -492,6 +498,11 @@
             });
             $("#nextContentsRight").click(function(){
             $("#nextContentsListRight").toggle("fast");
+            });
+            $(document).ready(function(){
+                $('.header__burger').click(function(event){
+                    $('.header__burger, .header-list, .header__btn').toggleClass('active');
+                });
             });
         </script>
     </body>
