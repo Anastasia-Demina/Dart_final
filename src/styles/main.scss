@@ -630,9 +630,6 @@ $green-color: #1de9b6;
                 margin-bottom: 54px;
                 margin-left: 10px;
                 cursor: pointer;
-                @media(max-width:900px) {
-                    margin: 0 auto 166px;
-                }
                 &__img:hover {
                     width: 160px;
                     height: 160px;
